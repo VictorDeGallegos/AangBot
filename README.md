@@ -32,6 +32,8 @@ Si se desea ver en funcionamiento el bot basta con probarlo en algun servidor de
 
 * [Node.js](https://nodejs.org/es/) - Un entorno de ejecución para JavaScript construido con V8, motor de JavaScript de Chrome.
 
+## Notas 📝
+Se conecto a un repit para correr el bot en cualquier momento
 
 ## Autores ✒️
 

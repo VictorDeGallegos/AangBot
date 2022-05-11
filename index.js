@@ -28,6 +28,23 @@ client.on('messageCreate', async (message) => {
     message.channel.send(`Yo se que si 🤭`);
   }
 
+  if (message.content.includes('aang')) {
+    message.channel.send(`Tengo que capturar al avatar`);
+  }
+
+  if (message.content.includes('Aang')) {
+    message.channel.send(`Tengo que capturar al avatar`);
+  }
+
+  if (message.content.includes('¿Cual es el mejor equipo de Mexico?')) {
+    message.channel.send(`Los gloriosos Pumas de la UNAM`);
+  }
+
+  if (message.content.includes('¿Cual es la mejor facultad de la UNAM?')) {
+    message.channel.send(`La hermosa Facultad de Ciencias`);
+  }
+
+
   if (message.content.includes('si')) {
     message.channel.send('http://pm1.narvii.com/6472/204b0658ec2a0a24f1ff467fc8a8b4f9a9a2034d_00.jpg');
   }

@@ -28,10 +28,6 @@ client.on('messageCreate', async (message) => {
     message.channel.send(`Yo se que si 🤭`);
   }
 
-  if (message.content.includes('aang')) {
-    message.channel.send(`Tengo que capturar al avatar`);
-  }
-
   if (message.content.includes('Aang')) {
     message.channel.send(`Tengo que capturar al avatar`);
   }
@@ -44,9 +40,23 @@ client.on('messageCreate', async (message) => {
     message.channel.send(`La hermosa Facultad de Ciencias`);
   }
 
-
   if (message.content.includes('si')) {
-    message.channel.send('http://pm1.narvii.com/6472/204b0658ec2a0a24f1ff467fc8a8b4f9a9a2034d_00.jpg');
+    message.channel.send('https://i.pinimg.com/originals/a9/e5/49/a9e5495a47f33e58380815f78f5a557c.png');
+  }
+
+  if (message.content.includes('tienes ' + 'mascotas')) {
+    message.channel.send(
+      `Appa es mi leal bisonte volador` +
+        `  https://st1.uvnimg.com/dims4/default/bb00374/2147483647/thumbnail/480x270/quality/75/?url=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fa%2Fappa_avatar_la_leyenda_aang.jpg`
+    );
+  }
+
+  if (message.content.includes('cuantos ' + 'años' + ' tienes')) {
+    message.channel.send(`112 años` + ` Cuantos años tienes tu ?`);
+  }
+
+  if (message.content === 'bye') {
+    message.channel.send(`Bye ${message.author}!`);
   }
 });
 

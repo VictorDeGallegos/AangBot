@@ -54,7 +54,31 @@ client.on('messageCreate', async (message) => {
   if (message.content.includes('cuantos ' + 'años' + ' tienes')) {
     message.channel.send(`112 años` + ` Cuantos años tienes tu ?`);
   }
+  
+  if (message.content === '¿Quien te creo?') {
+    message.channel.send(`Javatar!`);
+  }
+  
+  if (message.content === '¿Que idiomas hablas?') {
+    message.channel.send(`Todos🤭`);
+  }
+  
+  if (message.content === 'Pelon') {
+    message.channel.send(`A quien le dices pelon?` + `https://i.imgflip.com/5mq3ib.jpg`);
+  }
 
+  if (message.content === 'Quien es el amor de tu vida?') {
+    message.channel.send(`La unica motomami, Katara` + `https://www.meme-arsenal.com/memes/6de05b7134b00ea2b3b8fad784b8dc2e.jpg`);
+  }
+
+  if (message.content === 'Me siento mal') {
+    message.channel.send(`No se diga mas, vamos a revisarte` + `https://stickers.wiki/static/stickers/johnnysinsmeme/file_237515.webp?ezimgfmt=rs:136x136/rscb1/ng:webp/ngcb1`);
+  }
+
+  if (message.content === 'Cuanto me quieres?') {
+    message.channel.send(`De aqui a la luna bb, pero no le digas a la Katara` + `https://stickers.wiki/static/stickers/johnnysinsmeme/file_237519.webp?ezimgfmt=rs:136x136/rscb1/ng:webp/ngcb1`);
+  }
+  
   if (message.content === 'bye') {
     message.channel.send(`Bye ${message.author}!`);
   }

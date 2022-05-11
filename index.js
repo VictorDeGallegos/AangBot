@@ -54,6 +54,14 @@ client.on('messageCreate', async (message) => {
   if (message.content.includes('cuantos ' + 'años' + ' tienes')) {
     message.channel.send(`112 años` + ` Cuantos años tienes tu ?`);
   }
+  
+  if (message.content === '¿Quien te creo?') {
+    message.channel.send(`Javatar!`);
+  }
+  
+  if (message.content === '¿Que idiomas hablas?') {
+    message.channel.send(`Todos🤭`);
+  }
 
   if (message.content === 'bye') {
     message.channel.send(`Bye ${message.author}!`);

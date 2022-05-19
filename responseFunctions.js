@@ -6,7 +6,7 @@ module.exports = {
     for (var key of Object.keys(diccionario)) {
       //console.log(diccionario[key].regex);
       for (const regex of diccionario[key].regex) {
-        //console.log(regex);
+        // console.log(regex);
         var re = new RegExp(regex, 'i');
         let str = userInput.match(re);
         if (str) {
@@ -40,7 +40,7 @@ module.exports = {
     var intentName = intent.intent;
     if (intentName == 'desaprobacion') {
       return module.exports.respuestaApropiada(intent, userInput, contexto);
-    } else if (intentName == 'Consejo para ligar') {
+    } else if (intentName == 'consejo') {
       return adFunc.contarConsejo();
     }
     return '';
@@ -51,7 +51,7 @@ module.exports = {
     if (contexto == 'CONSEJO') {
       return 'Aquí te va otro' + adFunc.contarConsejo();
     } else {
-      return '...';
+      return 'Aquí te va otro no lo olvides' + adFunc.contarConsejo();
     }
   },
 };

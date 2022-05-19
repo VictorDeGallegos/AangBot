@@ -34,7 +34,7 @@ client.on('messageCreate', async (message) => {
   //if (message.content === 'ping') {
   var text = message.content;
   intent = refunc.findIntent(conoci, text);
-  //console.log(intent);
+  // console.log(intent);
   contexto = refunc.identificarContexto(intent, contexto);
   //console.log(contexto);
   respuesta = refunc.responder(intent);

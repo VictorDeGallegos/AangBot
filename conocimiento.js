@@ -4,16 +4,16 @@ module.exports = {
       intent: 'bienvenida',
       regex: ['Hola'],
       respuesta: [
-        'Hola, ¿Que puedo hacer por ti príncipe? Tu pide, que por lo  bukis y dinero no paramos.',
-        'Nos vamos de party o quieres un consejo para ligarte una niña bien?',
+        'Hola, ¿Que puedo hacer por ti príncipe? Tu pide, que por lo  bukis y dinero no paramos 💸.',
+        'Nos vamos de party 🍾 o quieres un consejo para ligarte una niña bien? 💅🏻',
       ],
     },
 
     presentacion: {
       intent: 'presentación',
-      regex: ['(quien eres|eres)', '(presentate|presentacion)'],
+      regex: ['(quien eres)', '(presentate|presentacion)'],
       respuesta: [
-        'Hola, Soy un bot que te lleva de fiesta y  te ayuda a ligarte a una niña bien.' +
+        'Hola, soy el único bot que te lleva de fiesta y  te ayuda a ligarte a una niña bien.' +
           '¿Que puedo hacer por ti príncipe?' +
           'Tu pide, que por lobukis y dinero no paramos.' +
           'Nos vamos de party a uno de los mejores antros de la ciudad o prefieres un consejo para ligarte una niña bien?',
@@ -21,26 +21,38 @@ module.exports = {
     },
 
     consejo: {
-      intent: 'Consejo para ligar',
-      regex: ['Consejo para ligar|consejo|como ligar|quiero romper el hielo|'],
-      respuesta: ['Agarrate principe, toma nota...', 'Ahí te va, atención neni...'],
+      intent: 'consejo',
+      regex: ['(Consejo para ligar|romper el hielo|consejo|Consejo)'],
+      respuesta: ['Agarrate principe, toma nota...', 'Ahí te va, atención principe...'],
     },
 
     desaprobacion: {
       intent: 'desaprobacion',
-      regex: ['(no me gusta|me aburre|algo mas|otr(a|o)|miedo|asusta|mas|no gracias)'],
-      respuesta: ['Y ahorita no tengo paciencia por que no tengo tiempo príncipe'],
+      regex: ['no me gusta|me aburre|algo mas|otr(a|o)|miedo|asusta|mas'],
+      respuesta: [''],
     },
 
     fiesta: {
-      intent: 'Vamonos de party',
-      regex: ['Vamonos de party'],
+      intent: 'fiesta',
+      regex: ['Vamonos de party | fiesta | peda'],
       respuesta: ['¿En que alcaldia estas?'],
     },
     despedida: {
-      intent: 'Despedida',
+      intent: 'despedida',
       regex: ['(bye|hasta luego|Adios|apagate|hasta la vista|nos vemos|Cuidate mucho)'],
-      respuesta: ['Bueno ya me voy a dormir, si ven que comparto memes es mi manager.'],
+      respuesta: ['Bueno ya me voy a dormir, si ven que comparto memes es mi manager ✌🏻'],
+    },
+
+    desconocido: {
+      intent: 'desconocido',
+      regex: ['.*'],
+      respuesta: [
+        'Lo siento Principe ¿Puedes escribirlo bien? 🤢',
+        'A ver mirrey , no tengo ni idea de lo que me estas diciendo 🤔',
+        '¿Todo bien en casa? , usa un diccionario papi 🤷🏻‍♂️',
+        'A ver plebeyo escribes bien o te vas, por que no me pienso dar baños de pueblo 🤠😒',
+        'Obvio no puedo hacer eso ¿En que pensabas rey? 🥸',
+      ],
     },
   },
 };

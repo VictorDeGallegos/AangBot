@@ -43,6 +43,14 @@ module.exports = {
       respuesta: ['Bueno ya me voy a dormir, si ven que comparto memes es mi manager ✌🏻'],
     },
 
+    embed: {
+      intent: 'embed',
+      regex: [
+        'Alvaro Obregón|Azcapotzalco|Benito Juárez|Coyoacán|Cuajimalpa|Cuauhtémoc|Gustavo A Madero|Iztacalco|Iztapalapa|Magdalena Contreras|Miguel Hidalgo|Milpa Alta|Tláhuac|Tlalpan|Venustiano Carranza|Xochimilco',
+      ],
+      respuesta: ['¿Quieres un consejo para tu outfit principe?'],
+    },
+
     desconocido: {
       intent: 'desconocido',
       regex: ['.*'],
@@ -54,6 +62,7 @@ module.exports = {
         'Obvio no puedo hacer eso ¿En que pensabas rey? 🥸',
         'Me considero un chavito bien asi que mejor escribe bien porfa🙄',
         'Que flojera ver tu mensaje basico, minimo cuenta un chiste o algo 😒',
+        'Valorate mi rey ¡tqm! 😳',
       ],
     },
   },

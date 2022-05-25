@@ -22,7 +22,7 @@ module.exports = {
 
     consejo: {
       intent: 'consejo',
-      regex: ['(Consejo para ligar|romper el hielo|consejo|Consejo)'],
+      regex: ['(Consejo para ligar|romper el hielo|consejo|Consejo|Me gusta alguien|Estoy enamorado)'],
       respuesta: ['Agarrate principe, toma nota...', 'Ahí te va, atención principe...'],
     },
 
@@ -34,7 +34,7 @@ module.exports = {
 
     fiesta: {
       intent: 'fiesta',
-      regex: ['Vamonos de party | fiesta | peda'],
+      regex: ['Vamonos de party | fiesta | peda | Vamos de peda'],
       respuesta: ['¿En que alcaldia estas?'],
     },
     despedida: {
@@ -60,6 +60,8 @@ module.exports = {
         '¿Todo bien en casa? , usa un diccionario papi 🤷🏻‍♂️',
         'A ver plebeyo escribes bien o te vas, por que no me pienso dar baños de pueblo 🤠😒',
         'Obvio no puedo hacer eso ¿En que pensabas rey? 🥸',
+        'Me considero un chavito bien asi que mejor escribe bien porfa🙄',
+        'Que flojera ver tu mensaje basico, minimo cuenta un chiste o algo 😒',
         'Valorate mi rey ¡tqm! 😳',
       ],
     },

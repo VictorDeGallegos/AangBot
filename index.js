@@ -92,10 +92,10 @@ client.on('messageCreate', async (message) => {
   }
 
   // Coyoacán(demian)
-  if (message.content.startsWith(prefix + 'Coyoacan')) {
+  if (message.content.startsWith(prefix + 'Coyoacán')) {
     const embed = new Discord.MessageEmbed()
       .setTitle('Asha Bar')
-      .setThumbnail('https://twitter.com/AshaBarOficial/photo')
+      .setThumbnail('https://asha-bar.com/archivo/img-logo/80x80/ed2b538709_ww.png')
       .setDescription('')
       .setColor(0x3b83bd)
       .addField(
@@ -110,7 +110,7 @@ client.on('messageCreate', async (message) => {
       .addField('Pagina web', '(https://asha-bar.com/)', true)
       .addField('Parking:', 'no', true)
       .addField('Para pasar los canederos rapidamente:', 'Principalmente ir bien vestido y en parejas de preferencia ')
-      .setImage('https://images.app.goo.gl/ZSWAWsarc1ksC2U5A', (size = 100))
+      .setImage('https://asha-bar.com/archivo/img-galery/lugar/600x600/c2889b8ef3-galeria-para-web-asha-13.jpg', (size = 100))
       .setFooter('VERIFICADO POR EL GOBIERNO DE LA CDMX ')
       .setTimestamp();
 
@@ -388,4 +388,4 @@ client.on('messageCreate', async (message) => {
   message.channel.send(respuesta);
 });
 
-client.login('OTcxNDk2ODEzNTMyMTgwNTQy.Gx8pyI.UAc0ExA9NpNHwbJsBYHPebotffVQM6wCkMxiA4'); //ENCRIPTAR TOKEN
+client.login('OTcxNDk2ODEzNTMyMTgwNTQy.Gi1ARN.3ZFKWsD_ttYxhjyxoVuOQ7jn5L99besVNURepA'); //ENCRIPTAR TOKEN

@@ -26,6 +26,8 @@ module.exports = {
       return 'PRESENTACION';
     } else if (intentName == 'consejo') {
       return 'CONSEJO';
+    } else if (intentName == 'outfit') {
+      return 'OUTFIT';
     }
     return contexto;
   },
@@ -42,6 +44,8 @@ module.exports = {
       return module.exports.respuestaApropiada(intent, userInput, contexto);
     } else if (intentName == 'consejo') {
       return adFunc.contarConsejo();
+    }else if(intentName=='outfit'){
+      return adFunc.mostrarOutfit();
     }
     return '';
   },
@@ -52,6 +56,16 @@ module.exports = {
       return 'Aquí te va otro' + adFunc.contarConsejo();
     } else {
       return 'Aquí te va otro no lo olvides' + adFunc.contarConsejo();
+    }
+  },
+
+
+  respuestaApropiadaOutfit(intent, userInput, contexto) {
+    //Función que modifica una respuesta para que su contenido sea el adecuado.
+    if (contexto == 'OUTFIT') {
+      return 'Aquí te va otro' + adFunc.mostrarOutfit();
+    } else {
+      return 'Aquí te va otro no lo olvides' + adFunc.mostrarOutfit();
     }
   },
 };

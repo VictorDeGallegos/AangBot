@@ -56,6 +56,7 @@ client.on('messageCreate', async (message) => {
       .setTimestamp();
 
     message.reply({ embeds: [embed], content: 'Este es mi favorito cuando voy a la Azcapo :', components: [] });
+   
   }
 
   // Benito Juárez

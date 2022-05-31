@@ -28,9 +28,11 @@ module.exports = {
 
     outfit: {
       intent: 'outfit',
-      regex: ['(Si quiero un outfit|Necesito un buen outfit|Dame un outfit|Outfit|Enseñame un outfit|Show me outfit|Enseñame un buen outfito)'],
+      regex: [
+        '(Si quiero un outfit|Necesito un buen outfit|Dame un outfit|Outfit|Enseñame un outfit|Show me outfit|Enseñame un buen outfito)',
+      ],
 
-      respuesta:['Ahi te van papi....,' ,'Que bueno que los pediste por que pareces de insurgentes sur'],
+      respuesta: ['Ahi te van papi....,', 'Que bueno que los pediste por que pareces de insurgentes sur'],
     },
 
     desaprobacion: {
@@ -41,7 +43,7 @@ module.exports = {
 
     fiesta: {
       intent: 'fiesta',
-      regex: ['Vamonos de party | fiesta | peda | Vamos de peda'],
+      regex: ['Vamonos de party|fiesta|peda|Vamos de peda'],
       respuesta: ['¿En que alcaldia estas?'],
     },
     despedida: {
@@ -55,7 +57,7 @@ module.exports = {
       regex: [
         'Alvaro Obregón|Azcapotzalco|Benito Juárez|Coyoacán|Cuajimalpa|Cuauhtémoc|Gustavo A Madero|Iztacalco|Iztapalapa|Magdalena Contreras|Miguel Hidalgo|Milpa Alta|Tláhuac|Tlalpan|Venustiano Carranza|Xochimilco',
       ],
-      respuesta: ['Ahora... ¿Quieres un aoutfit nice, principe?'],
+      respuesta: ['Ahora... ¿Quieres un outfit nice, principe?'],
     },
 
     desconocido: {

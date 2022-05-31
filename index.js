@@ -56,7 +56,6 @@ client.on('messageCreate', async (message) => {
       .setTimestamp();
 
     message.reply({ embeds: [embed], content: 'Este es mi favorito cuando voy a la Azcapo :', components: [] });
-   
   }
 
   // Benito Juárez
@@ -188,7 +187,7 @@ client.on('messageCreate', async (message) => {
     });
   }
   // Gustavo A. Madero(Top)
-  if (message.content.startsWith(prefix + 'Iztacalco')) {
+  if (message.content.startsWith(prefix + 'Gustavo A. Madero')) {
     const embed = new Discord.MessageEmbed().setTitle('Sin info nene');
     message.reply({
       embeds: [embed],

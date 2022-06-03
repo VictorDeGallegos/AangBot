@@ -40,11 +40,20 @@ module.exports = {
   acciones(intent, userInput, contexto) {
     //Función que añade contenido necesario a una respuesta.
     var intentName = intent.intent;
-    if (intentName == 'desaprobacion') {
+    if (intentName == 'desaprobacionConsejo') {
       return module.exports.respuestaApropiada(intent, userInput, contexto);
     } else if (intentName == 'consejo') {
       return adFunc.contarConsejo();
-    }else if(intentName=='outfit'){
+    }
+    return '';
+  },
+
+  acciones(intent, userInput, contexto) {
+    //Función que añade contenido necesario a una respuesta.
+    var intentName = intent.intent;
+    if (intentName == 'desaprobacionOutfit') {
+      return module.exports.respuestaApropiadaOutfit(intent, userInput, contexto);
+    } else if (intentName == 'outfit') {
       return adFunc.mostrarOutfit();
     }
     return '';
@@ -55,17 +64,16 @@ module.exports = {
     if (contexto == 'CONSEJO') {
       return 'Aquí te va otro' + adFunc.contarConsejo();
     } else {
-      return 'Aquí te va otro no lo olvides' + adFunc.contarConsejo();
+      return 'Aquí te va otro, espero que tengas éxito como lo hice en Eiza González' + adFunc.contarConsejo();
     }
   },
-
 
   respuestaApropiadaOutfit(intent, userInput, contexto) {
     //Función que modifica una respuesta para que su contenido sea el adecuado.
     if (contexto == 'OUTFIT') {
-      return 'Aquí te va otro' + adFunc.mostrarOutfit();
+      return 'Aquí te va otro principe' + adFunc.mostrarOutfit();
     } else {
-      return 'Aquí te va otro no lo olvides' + adFunc.mostrarOutfit();
+      return 'Que exigente, bueno esto es para ti' + adFunc.mostrarOutfit();
     }
   },
 };

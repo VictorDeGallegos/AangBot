@@ -2,16 +2,16 @@ module.exports = {
   conocimiento: {
     bienvenida: {
       intent: 'bienvenida',
-      regex: ['Hola'],
+      regex: ['Hola', 'Inicio'],
       respuesta: [
-        'Hola, ¿Que puedo hacer por ti príncipe? Tu pide, que por lo  bukis y dinero no paramos 💸.',
-        'Nos vamos de party 🍾 o quieres un consejo para ligarte una niña bien? 💅🏻',
+        'Hola, ¿Que puedo hacer por ti príncipe? Tu pide, que por lo  bukis y dinero no paramos 💸. Nos vamos de party 🍾 o quieres un consejo para ligarte una niña bien? 💅🏻',
+        'Hola, Nos vamos de party 🍾 o quieres un consejo para ligarte una niña bien? 💅🏻',
       ],
     },
 
     presentacion: {
       intent: 'presentación',
-      regex: ['(Quien eres)', '(Presentate|Presentacion)', '(Que eres?)'],
+      regex: ['(Quien eres)', '(Presentate|Presentacion)', '(Que eres?)', '(Que puedes hacer?)'],
       respuesta: [
         'Hola, soy el único bot que te lleva de fiesta y  te ayuda a ligarte a una niña bien.' +
           '¿Que puedo hacer por ti príncipe?' +
@@ -28,22 +28,26 @@ module.exports = {
 
     outfit: {
       intent: 'outfit',
-      regex: [
-        '(Si quiero un outfit|Necesito un buen outfit|Dame un outfit|Outfit|Enseñame un outfit|Show me outfit|Enseñame un buen outfit)',
-      ],
+      regex: ['(Si|Necesito un buen outfit|Dame un outfit|Outfit|Enseñame un outfit|Show me outfit|Enseñame un buen outfit)'],
 
       respuesta: ['Ahi te van papi...', 'Que bueno que los pediste por que pareces de insurgentes sur'],
     },
 
-    desaprobacion: {
-      intent: 'desaprobacion',
+    desaprobacionConsejo: {
+      intent: 'desaprobacionConsejo',
       regex: ['no me gusta|me aburre|algo más|otr(a|o)|más'],
+      respuesta: [''],
+    },
+
+    desaprobacionOutfit: {
+      intent: 'desaprobacionOutfit',
+      regex: ['No es mi estilo|Quema eso|Nuevo'],
       respuesta: [''],
     },
 
     fiesta: {
       intent: 'fiesta',
-      regex: ['Vamonos de party|Fiesta|Peda|Vamos de peda|Vámonos de peda|Vámonos de party|Party'],
+      regex: ['Vámonos de party|Fiesta|Peda|Vámos de peda|Vámonos de peda|Vámonos de party|Party'],
       respuesta: ['¿En que alcaldia estas?'],
     },
     despedida: {

@@ -1,6 +1,6 @@
 # AangBot 🤖
 
-Universidad Autonoma de México
+Universidad Nacional Autónoma de México
 
 Ciencias de la computación
 11/05/2022

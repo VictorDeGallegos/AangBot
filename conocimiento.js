@@ -11,7 +11,7 @@ module.exports = {
 
     presentacion: {
       intent: 'presentación',
-      regex: ['(quien eres)', '(presentate|presentacion)'],
+      regex: ['(Quien eres)', '(Presentate|Presentacion)', '(Que eres?)'],
       respuesta: [
         'Hola, soy el único bot que te lleva de fiesta y  te ayuda a ligarte a una niña bien.' +
           '¿Que puedo hacer por ti príncipe?' +
@@ -22,28 +22,28 @@ module.exports = {
 
     consejo: {
       intent: 'consejo',
-      regex: ['(Consejo para ligar|romper el hielo|consejo|Consejo|Me gusta alguien|Estoy enamorado)'],
+      regex: ['(Consejo para ligar|romper el hielo|consejo|Consejo|Me gusta alguien|Estoy enamorado|Ligar|Dame consejo)'],
       respuesta: ['Agarrate principe, toma nota...', 'Ahí te va, atención principe...'],
     },
 
     outfit: {
       intent: 'outfit',
       regex: [
-        '(Si quiero un outfit|Necesito un buen outfit|Dame un outfit|Outfit|Enseñame un outfit|Show me outfit|Enseñame un buen outfito)',
+        '(Si quiero un outfit|Necesito un buen outfit|Dame un outfit|Outfit|Enseñame un outfit|Show me outfit|Enseñame un buen outfit)',
       ],
 
-      respuesta: ['Ahi te van papi....,', 'Que bueno que los pediste por que pareces de insurgentes sur'],
+      respuesta: ['Ahi te van papi...', 'Que bueno que los pediste por que pareces de insurgentes sur'],
     },
 
     desaprobacion: {
       intent: 'desaprobacion',
-      regex: ['no me gusta|me aburre|algo mas|otr(a|o)|miedo|asusta|mas'],
+      regex: ['no me gusta|me aburre|algo más|otr(a|o)|más'],
       respuesta: [''],
     },
 
     fiesta: {
       intent: 'fiesta',
-      regex: ['Vamonos de party|fiesta|peda|Vamos de peda'],
+      regex: ['Vamonos de party|Fiesta|Peda|Vamos de peda|Vámonos de peda|Vámonos de party|Party'],
       respuesta: ['¿En que alcaldia estas?'],
     },
     despedida: {
@@ -68,10 +68,10 @@ module.exports = {
         'A ver mirrey , no tengo ni idea de lo que me estas diciendo 🤔',
         '¿Todo bien en casa? , usa un diccionario papi 🤷🏻‍♂️',
         'A ver plebeyo escribes bien o te vas, por que no me pienso dar baños de pueblo 🤠😒',
-        'Obvio no puedo hacer eso ¿En que pensabas rey? 🥸',
+        'Obvio no puedo hacer eso, escribelo bien para que empecemos a hablar ¿En que pensabas rey? 🥸',
         'Me considero un chavito bien asi que mejor escribe bien porfa🙄',
-        'Que flojera ver tu mensaje basico, minimo cuenta un chiste o algo 😒',
-        'Valorate mi rey ¡tqm! 😳',
+        'Que flojera ver tu mensaje basico, minimo cuenta un chiste o algo o empieza a escribir bien. 😒',
+        'Valorate mi rey y escribe algo que entienda y más importante que tu entiendas ¡tqm! 😳',
       ],
     },
   },

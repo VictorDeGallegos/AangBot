@@ -44,14 +44,7 @@ module.exports = {
       return module.exports.respuestaApropiada(intent, userInput, contexto);
     } else if (intentName == 'consejo') {
       return adFunc.contarConsejo();
-    }
-    return '';
-  },
-
-  acciones(intent, userInput, contexto) {
-    //Función que añade contenido necesario a una respuesta.
-    var intentName = intent.intent;
-    if (intentName == 'desaprobacionOutfit') {
+    } else if (intentName == 'desaprobacionOutfit') {
       return module.exports.respuestaApropiadaOutfit(intent, userInput, contexto);
     } else if (intentName == 'outfit') {
       return adFunc.mostrarOutfit();

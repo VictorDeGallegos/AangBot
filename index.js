@@ -388,4 +388,4 @@ client.on('messageCreate', async (message) => {
   message.channel.send(respuesta);
 });
 
-client.login('OTcxNDk2ODEzNTMyMTgwNTQy.Gi1ARN.3ZFKWsD_ttYxhjyxoVuOQ7jn5L99besVNURepA'); //ENCRIPTAR TOKEN
+client.login(''); //ENCRIPTAR TOKEN

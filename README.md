@@ -5,8 +5,7 @@ Universidad Nacional Autónoma de México
 Ciencias de la computación
 11/05/2022
 
-
-Tarea de Laboratorio 8: Creando un ChatBot
+Proyecto Diseño de un Chatbot
 
 Chatbot para asignatura de IA por JAVATAR
 

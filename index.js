@@ -388,4 +388,4 @@ client.on('messageCreate', async (message) => {
   message.channel.send(respuesta);
 });
 
-client.login(''); //ENCRIPTAR TOKEN
+client.login(process.env.token); //Token encriptado
